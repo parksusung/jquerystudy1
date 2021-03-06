@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<hmtl lang="ko">
+    <head>
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <script>
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".ss_bg").css({"display":"block"})
+
+
+    });
+
+    $(".x").click(function(){
+        $(".ss_bg").css({"display":"none"})
+    });
+});
+            
+            </script>
+    <style>
+        .btn{
+            width:100px;
+            height:40px;
+            line-height: 40px;
+            background:deepskyblue;
+            color:black;
+            text-align: center;
+            cursor: pointer;
+        }
+        .ss_bg{
+            display: none;
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0, 0, 0,0.7);
+        }
+        .ss{
+            position: absolute;
+            left:calc(50% - 150px);
+            top:calc(50% - 250px);
+            width:300px;
+            height:500px;
+            background-color: floralwhite;
+        }
+        .x{
+            background-color: red;
+            font-weight: bold;
+            position: absolute;
+            left:calc(50% + 130px);
+            top:calc(50% - 250px);
+            width:20px;
+            height:20px;
+            
+        }
+    </style>
+
+    </head>
+
+    <body>
+        <div class="btn">Button</div>
+        <div class="ss_bg">
+            <div class="ss"><br><br>jquery 이벤트 실행 연습 html
+                <br>document가 레디되면 다음함수를 실행하여라
+                <br>class명을 클릭했을떄 이벤트 발생하기
+                <br>해당 class에대한 이벤트는 $(this).css~ 넣으면됨 
+                <br>block은 none의반대가아님 첫 초기값에 맞춰서 주자
+                <br>처음 css의 display초기값이 block이라서 none해준걸 원래대로돌린것 
+                <br>이상 간단한 jquery event 첫번쨰 연습 끝 
+                <br> 수고~~ 취업하는그날까지 열공하즈아 
+                <div class="x"> X</div>
+            </div>
+        </div>
+    </body>
+</hmtl>
